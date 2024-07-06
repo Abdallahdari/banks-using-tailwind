@@ -618,11 +618,6 @@ video {
   margin-bottom: 6rem;
 }
 
-.my-8 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
-
 .mb-7 {
   margin-bottom: 1.75rem;
 }
@@ -1055,10 +1050,10 @@ body{
 }
 
 .operations__content--active{
-  display:block;
-  /* grid-template-columns: 7rem 1fr;
-    padding: 1.5rem 6rem 5.5rem 6rem;
-    columns-gap:20px; */
+  display:grid;
+  grid-template-columns: 7rem 1fr;
+  padding: 1.5rem 6rem 5.5rem 6rem;
+  columns-gap:20px;
 }
 
 .operationico{
