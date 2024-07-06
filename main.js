@@ -67,24 +67,25 @@ imageTargets.forEach(img => {
     imageObserver.observe(img);
 });
 // tabs
+
+
+
 const operationTabs = document.querySelectorAll(".operations-tab");
 const operationCon = document.querySelector(".operations-container");
-// const operationContents = document.querySelectorAll(".operations__content");
-// console.log(operationContents);
+const tabContent = document.querySelectorAll(".operations__content");
+
 
 operationCon.addEventListener("click", function(e) {
-    const clicked = e.target.closest(".operations-tab");
+  const clicked = e.target.closest(".operations-tab");
 
-    if (!clicked) return;
+  if (!clicked) return;
 
-    operationTabs.forEach(tab => tab.classList.remove("activetab"));
-
-    clicked.classList.add("activetab");
-
-   
+  // Remove active class from all tabs and content
+  operationTabs.forEach(tab => tab.classList.remove("activetab"));
+tabContent.forEach(t=>t.classList.add("hide")) 
+  // Add active class to the clicked tab and corresponding content
+  clicked.classList.add("activetab");
+const show=document.querySelector(`.operations__content--${clicked.dataset.tab}`)
+show.classList.remove("hide")
+show.classList.add("operations__content--active")
 });
-
-
-
-
-

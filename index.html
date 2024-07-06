@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,8 +19,8 @@
 <nav class="navbar  flex items-center justify-between ">
   <img src="img/logo.png" alt="" class="logo w-36"> 
   <ul class="links flex space-x-6 items-center">
-<li><a class="item" href="#">Features</a></li>
-<li><a class="item" href="#">Operations</a></li>
+<li><a class="item" href="#section---1">Features</a></li>
+<li><a class="item" href="#section--2">Operations</a></li>
 <li><a class="item" href="#">Testimonials</a></li>
 
 <li><a class="item py-2  px-5 bg-[#308655] flex items-center rounded-full "  href="#">open account</a> </li>
@@ -45,7 +45,7 @@
 </div>
 </header>
 <hr>
-<section class="mt-28 section--1 py-6">
+<section id="section---1" class="mt-28 section--1 py-6">
 <div class="container mx-auto xl:max-w-[1200px]">
 <div class="flex flex-col gap-3">
     <div class="px-16 max-w-[65rem]">
@@ -118,21 +118,34 @@
 </section>
 <hr class="mt-10">
 
-<section class="section-op mt-24">
+<section id="section--2" class="section-op mt-24 py-5">
     <div class="container mx-auto xl:max-w-[1200px]">
 
     <div class="px-16 max-w-[65rem]">
         <p class="text-fea text-green-500 font-semibold mb-8">FEATURES</p>
         <h3 class="text-ever text-[2.7rem] font-semibold ">Everything you need in a modern bank  and more</h3s>
         </div>
-        <div class="max-w-[60rem] mx-auto bg-white text-white my-24 ">
+        <div class="operations max-w-[60rem] mx-auto bg-white text-white my-24 ">
             <div class="operations-container mt-8  opentions flex justify-around items-center space-x-1">
-                <button class="operations-tab  transition  text-xs flex gap-3 py-3 -translate-y-1/2  px-9 bg-[#5ec576] rounded-full" datatab="1"><span class="text-[15px]">01</span><p class="text-[15px]">Instant Transfers
+                <button class="operations-tab  transition  text-xs flex gap-3 py-3 -translate-y-1/2  px-9 bg-[#5ec576] rounded-full" data-tab="1"><span class="text-[15px]">01</span><p class="text-[15px]">Instant Transfers
                 </p></button>
-                <button class="operations-tab transition text-xs flex gap-3 py-3 -translate-y-1/2  px-9 bg-[#ffbb00] rounded-full" datatab="2"><span class="text-[15px]">01</span><p class="text-[15px]">Instant Transfers
-                    <button class="operations-tab acctivetab transition text-xs flex gap-3 py-3 -translate-y-1/2 px-9 bg-[#ff585f] rounded-full" datatab="3"><span class="text-[15px]">01</span><p class="text-[15px]">Instant Transfers
+                <button class="operations-tab transition text-xs flex gap-3 py-3 -translate-y-1/2  px-9 bg-[#ffbb00] rounded-full" data-tab="2"><span class="text-[15px]">01</span><p class="text-[15px]">Instant Transfers
+                    <button class="operations-tab acctivetab transition text-xs flex gap-3 py-3 -translate-y-1/2 px-9 bg-[#ff585f] rounded-full" data-tab="3"><span class="text-[15px]">01</span><p class="text-[15px]">Instant Transfers
 
             </div>
+<!-- <div class="operation--contetnt content--1 operations__content--active">
+
+</div>
+<div class="operation--contetnt content--2 my-8 hide">
+<p class="lore">Lorem2 ipsum dolor sit amet consectetur adipisicing elit. Unde, modi. Quibusdam natus odit reprehenderit in facilis eligendi fuga praesentium perferendis, eius accusamus exercitationem nisi dolore non nesciunt quos, nobis corrupti!</p>
+
+</div>
+<div class="operation--contetnt content--3 hide">
+  <p class="lore">Lorem3 ipsum dolor sit amet consectetur adipisicing elit. Unde, modi. Quibusdam natus odit reprehenderit in facilis eligendi fuga praesentium perferendis, eius accusamus exercitationem nisi dolore non nesciunt quos, nobis corrupti!</p>
+
+
+</div> -->
+
             <div class=" p-5   operations__content operations__content--1 operations__content--active">
  <div class="operations__icon operations__icon--1 justify-self-center feature-icons 	 w-[5rem] h-[5rem] rounded-full flex items-center  justify-center self-center  bg-[#DAF2E0]">
                 
@@ -152,7 +165,7 @@
               aliquip ex ea commodo consequat.
             </p>
           </div>
-          <div class=" p-5 hide operations__content operations__content--2 operations__content--active">
+          <div class=" p-5 hide  operations__content operations__content--2 operations__content--active">
             <div class="operations__icon operations__icon--1 justify-self-center feature-icons 	 w-[5rem] h-[5rem] rounded-full flex items-center  justify-center self-center  bg-[#ffcd0331]">
                            
            

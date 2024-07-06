@@ -70,7 +70,7 @@ body{
 .activetab{
     transform: translateY(-66%);
 }
-.operations__content{
+.operations__content--active{
     display:grid;
     grid-template-columns: 7rem 1fr;
     padding: 1.5rem 6rem 5.5rem 6rem;
