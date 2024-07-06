@@ -89,3 +89,6 @@ const show=document.querySelector(`.operations__content--${clicked.dataset.tab}`
 show.classList.remove("hide")
 show.classList.add("operations__content--active")
 });
+
+
+window.onbeforeunload=()=>true
